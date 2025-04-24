@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Plant Care Guide 🌿</title>
+  <link rel="stylesheet" href="/assets/css/care-guide.css">
+</head>
+<body>
+
+  <nav>
+    <a href="/index.html">EverGrow AI</a>
+    <div class="cntr-nav">
+        <a href="/home.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+    <i class="ri-search-line"></i>
+  </nav>
+
+  <section class="care-guide">
+    <h1>🌿 Get Your Personalized Plant Care Guide 🌿</h1>
+    
+    <form id="plant-form">
+      <label>Plant Type:
+        <input type="text" id="plantType" placeholder="e.g., Succulent">
+      </label><br>
+
+      <label>Sunlight Needs:
+        <input type="text" id="sunlight" placeholder="e.g., Full Sun">
+      </label><br>
+
+      <label>Soil Type:
+        <input type="text" id="soilType" placeholder="e.g., Well-drained">
+      </label><br>
+
+      <label>Watering Frequency:
+        <input type="text" id="watering" placeholder="e.g., Weekly">
+      </label><br>
+
+      <button type="submit">Generate Care Tips</button>
+      <a href="/home.html">
+        <button type="button">Back</button>
+      </a> <br>
+
+    </form>
+
+    <div id="ai-result"></div>
+  </section>
+
+  <script src="/assets/js/care-guide.js"></script>
+</body>
+</html>

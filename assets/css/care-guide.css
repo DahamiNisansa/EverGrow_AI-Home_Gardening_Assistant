@@ -1,0 +1,255 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "EB Garamond", serif;
+}
+
+nav{
+  position:absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 10vh;
+  padding: 0vw 10vw;
+  z-index: 99;
+}
+
+nav a, i{
+  font-size: 1.5vw;
+  text-decoration: none;
+  color: #881e1e;
+}
+
+nav a:hover{
+  color: rgb(242, 140, 68);
+  text-decoration: underline;
+}
+
+.cntr-nav{
+  display: flex;
+  gap: 3vw;
+}
+
+nav i{
+  font-size: 1.5vw;
+}
+
+.care-guide{
+  background: url(/assets/img/care-guide-bg.jpg);
+  height: 173vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.care-guide form {
+  margin-top: 30px;
+}
+
+h1{
+  padding-top: 115px;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+input {
+  padding: 10px;
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 5px;
+}
+
+button {
+  margin-top: 20px;
+  background: #4caf50;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+button:hover {
+  background: #388e3c;
+}
+
+.card {
+  margin-top: 30px;
+  padding: 20px;
+  background: #e0f2f1;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  color: #2e7d32;
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #306d47;
+  margin-bottom: 30px;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #305f46;
+}
+
+form input {
+  width: 50%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #b6dbc7;
+  border-radius: 10px;
+  background-color: #f5fffa;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #226244;
+  background-color: #ffffff;
+}
+
+button[type="submit"] {
+  background-color: #66a185;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 19%;
+}
+
+button[type="submit"]:hover {
+  background-color: #47976e;
+  transform: scale(1.03);
+}
+
+
+button[type="button"] {
+  background-color: #66a185;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 12%;
+}
+
+button[type="button"]:hover {
+  background-color: #47976e;
+  transform: scale(1.03);
+}
+
+
+
+#ai-result {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 10px;
+  font-family: 'Segoe UI', sans-serif;
+  max-height: 700px;      
+  overflow-y: auto;       
+  padding-right: 10px; 
+}
+
+.chat-bubble {
+  margin: 10px 0;
+  padding: 12px 16px;
+  border-radius: 16px;
+  line-height: 1.5;
+  max-width: 80%;
+  white-space: pre-line;
+  word-wrap: break-word;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.chat-bubble.user {
+  background-color: #d1e7dd;
+  color: #073a22;
+  align-self: flex-end;
+  margin-left: auto;
+  border-bottom-right-radius: 0;
+  font-size: 17px;
+}
+
+.chat-bubble.ai {
+  background-color: #fde8d0;
+  color: #60380a;
+  align-self: flex-start;
+  margin-right: auto;
+  border-bottom-left-radius: 0;
+  width: 1000px;
+  font-size: 17px;
+}
+
+.chat-bubble.error {
+  background-color: #f8d7da;
+  color: #842029;
+  border: 1px solid #f5c2c7;
+  font-weight: bold;
+  text-align: center;
+}
+
+#ai-result {
+  display: flex;
+  flex-direction: column;
+}
+
+
+#ai-result::-webkit-scrollbar {
+  width: 8px;
+}
+
+#ai-result::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+#ai-result::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 10px;
+}
+
+#ai-result::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+
+
+.chat-bubble {
+  animation: fadeInUp 0.3s ease-out;
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
